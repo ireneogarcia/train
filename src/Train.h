@@ -11,7 +11,7 @@ public:
     Train (int cstop,float speed,Line l);
     int getCurrentStop();
     int getSpeed();
-    void go( float speed);
+    void go();
     void stop();
 
 };

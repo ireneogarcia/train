@@ -21,6 +21,11 @@ void Train::go( ){
     std::cout << "arranco de la parada " << currentStop <<'\n';
     sleep((line.get(currentStop).getDistanceToNext())/speed);
     stop();
+}
 
-
+int Train::getCurrentStop() {
+    return currentStop;
+}
+int getSpeed() {
+    return speed;
 }
