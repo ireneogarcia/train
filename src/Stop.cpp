@@ -1,6 +1,10 @@
 #include "Stop.h"
 
 
-Stop::float getDistanceToNext(){
+float Stop::getDistanceToNext(){
     return distanceToNext;
+}
+
+string Stop::getStopName(){
+    return this->stopName;
 }

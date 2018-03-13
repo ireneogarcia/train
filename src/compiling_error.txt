@@ -1,0 +1,2 @@
+/home/usuario/train/src/main.cpp:2:20: fatal error: Trains.h: No existe el archivo o el directorio
+compilation terminated.

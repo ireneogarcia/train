@@ -1,6 +1,8 @@
 #ifndef TRAIN_H_
 #define TRAIN_H_
-
+#include <iostream>
+#include "Line.h"
+using namespace std;
 
 class Train {
     int currentStop;
@@ -10,7 +12,7 @@ public:
     Train();
     Train (int cstop,float speed,Line l);
     int getCurrentStop();
-    int getSpeed();
+    float getSpeed();
     void go();
     void stop();
 

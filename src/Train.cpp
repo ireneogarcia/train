@@ -1,4 +1,5 @@
 #include "Train.h"
+
 #include <unistd.h>
 
 Train::Train(){
@@ -6,7 +7,12 @@ Train::Train(){
     float speed = 0;
 }
 
-Train::Train (int cstop,float speed,Line l) : currentStop(cstop), speed(speed),line(l) {}
+Train::Train (int cstop,float speed,Line l) {
+ currentStop=cstop;
+ this->speed=speed;
+ line =l;
+
+}
 
 void Train::stop() {
     this->currentStop++;
@@ -19,13 +25,13 @@ void Train::go( ){
     // TO DO this->speed = speed;
     speed = 50;
     std::cout << "arranco de la parada " << currentStop <<'\n';
-    sleep((line.get(currentStop).getDistanceToNext())/speed);
+    sleep((line.getStop(currentStop).getDistanceToNext())/speed);
     stop();
 }
 
 int Train::getCurrentStop() {
     return currentStop;
 }
-int getSpeed() {
+float Train::getSpeed() {
     return speed;
 }
