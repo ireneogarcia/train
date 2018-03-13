@@ -8,6 +8,7 @@ class Train {
     int currentStop;
     float speed;
     Line line;
+    static int trainNumber;
 public:
     Train();
     Train (int cstop,float speed,Line l);

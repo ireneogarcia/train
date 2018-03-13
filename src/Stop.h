@@ -10,7 +10,7 @@ float distanceToNext;
 
 public:
     Stop(string stopName, float distanceToNext):stopName(stopName),distanceToNext(distanceToNext){}
-
+    Stop (){};
     float getDistanceToNext();
     string getStopName();
 

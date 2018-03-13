@@ -14,6 +14,7 @@ public:
     Line(string lineName):lineName(lineName){};
 void addStop(Stop stop);
 Stop getStop(int i);
+int getTotalStops();
 //Stop stopFind(string stopName);
 
 };

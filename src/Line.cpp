@@ -8,6 +8,10 @@ Stop Line::getStop(int i){
     return stops[i];
 }
 
+int Line::getTotalStops(){
+    return (int)stops.size();
+}
+
 // Stop Line::stopFind(string stopName){
 //     for(auto stop:stops){
 //         if (stopName==Stop::stop.getStopName()){
