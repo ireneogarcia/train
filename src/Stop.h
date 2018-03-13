@@ -9,7 +9,6 @@ float distanceToNext;
 
 public:
     Stop(string name, float distanceToNext):name(name),distanceToNext(distanceToNext){}
-
     };
-
+    float getDistanceToNext();
 #endif
