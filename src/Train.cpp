@@ -5,6 +5,7 @@
 
 int Train::numberOfTrains=0;
 
+
 Train::Train(){
     currentStop = 0;
     speed = 0;
@@ -17,7 +18,10 @@ Train::Train (int cstop,float speed,Line l) {
  numberOfTrains++;
  trainIdenfier=numberOfTrains;
  if(trainIdenfier!=1){
-    tabulator = tabulator +"\t";
+     for (int i = 0; i < numberOfTrains; i++) {
+         tabulator = tabulator +"\t";
+     }
+
  }
 
 }
@@ -38,7 +42,7 @@ void Train::go( ){
     int timeToNextStop= line.getStop(currentStop).getDistanceToNext()/speed;
     std::cout <<tabulator<<"Tren "<<trainIdenfier <<" saliendo de la parada " << currentStop<<", "<< line.getStop(currentStop).getStopName()<<'\n';
     for (int i = 0; i < timeToNextStop; i++) {
-        std::cout <<tabulator<< ". "<<endl;
+        std::cout <<tabulator<< "\\/"<<endl;
         sleep(1);
         if (i==timeToNextStop/2 && currentStop<line.getTotalStops()) {
             std::cout << '\n';
