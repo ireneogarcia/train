@@ -15,7 +15,7 @@ public:
 void addStop(Stop stop);
 Stop getStop(int i);
 int getTotalStops();
-//Stop stopFind(string stopName);
+int stopFind(string stopName);
 
 };
 

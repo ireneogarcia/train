@@ -12,12 +12,14 @@ int Line::getTotalStops(){
     return (int)stops.size();
 }
 
-// Stop Line::stopFind(string stopName){
-//     for(auto stop:stops){
-//         if (stopName==Stop::stop.getStopName()){
-//             return stop;
-//         }
-//     }
-//     std::cout << "This stop doesn't exist" << '\n';
-//     return stops[0];
-// }
+int Line::stopFind(string stopName){
+    // for(auto stop:stops){
+    //     if (stopName==Stop::stop.getStopName()){
+    //
+    //         return stop;
+    //     }
+    // }
+    // std::cout << "This stop doesn't exist" << '\n';
+    // return stops[0];
+    return 1;
+}

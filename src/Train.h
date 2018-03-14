@@ -8,12 +8,15 @@ class Train {
     int currentStop;
     float speed;
     Line line;
-    static int trainNumber;
+    static int numberOfTrains;
+    int trainIdenfier=0;
+    string tabulator="";
 public:
     Train();
     Train (int cstop,float speed,Line l);
     int getCurrentStop();
     float getSpeed();
+    void moveOn();
     void go();
     void stop();
 

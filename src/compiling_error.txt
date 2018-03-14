@@ -1,2 +1,3 @@
-/home/usuario/train/src/main.cpp:2:20: fatal error: Trains.h: No existe el archivo o el directorio
-compilation terminated.
+/home/usuario/train/src/Line.cpp:15:36: error: no ‘Stop Line::stopFind(std::__cxx11::string)’ member function declared in class ‘Line’
+ Stop Line::stopFind(string stopName){
+                                    ^
