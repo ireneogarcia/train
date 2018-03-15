@@ -1,10 +1,10 @@
 #include "Line.h"
 
-void Line::addStop(Stop stop){
+void Line::addStop(Stop* stop){
     stops.push_back(stop);
 }
 
-Stop Line::getStop(int i){
+Stop* Line::getStop(int i){
     return stops[i];
 }
 

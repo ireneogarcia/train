@@ -7,13 +7,13 @@ using namespace std;
 
 class Line {
 string lineName;
-std::vector<Stop> stops;
+std::vector<Stop*> stops;
 
 public:
-    Line (){};
-    Line(string lineName):lineName(lineName){};
-void addStop(Stop stop);
-Stop getStop(int i);
+Line (){};
+Line(string lineName):lineName(lineName){};
+void addStop(Stop* stop);
+Stop* getStop(int i);
 int getTotalStops();
 int stopFind(string stopName);
 
